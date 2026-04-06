@@ -1,0 +1,32 @@
+[
+  {
+    "nombre": "Valeria Solano",
+    "carrera": "Informática",
+    "sede": "UCR-SP",
+    "correo": "valeria.solano@ucr.ac.cr"
+  },
+  {
+    "nombre": "Marcos Ruiz",
+    "carrera": "Tecnología Multimedia",
+    "sede": "UCR-SP",
+    "correo": "marcos.ruiz@ucr.ac.cr"
+  },
+  {
+    "nombre": "Ana Elena Castro",
+    "carrera": "Informática",
+    "sede": "UCR-SP",
+    "correo": "ana.castro@ucr.ac.cr"
+  },
+  {
+    "nombre": "Luis Diego Brenes",
+    "carrera": "Tecnología Multimedia",
+    "sede": "UCR-SP",
+    "correo": "luis.brenes@ucr.ac.cr"
+  },
+  {
+    "nombre": "Sofía Méndez",
+    "carrera": "Informática",
+    "sede": "UCR-SP",
+    "correo": "sofia.mendez@ucr.ac.cr"
+  }
+]
