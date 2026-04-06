@@ -1,51 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Estudiantes - Básico</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f9;
-        padding: 20px;
-      }
+<head>
+<meta charset="UTF-8">
+<title>Estudiantes - Intermedio</title>
 
-      h1 {
-        text-align: center;
-        color: #0056b3;
-      }
+<style>
+    body { font-family: Arial; background: #f4f4f9; padding: 20px; }
+    h1 { text-align: center; color: #0056b3; }
 
-      .tarjeta {
+    #contenedor {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .tarjeta {
         background: white;
-        border-radius: 8px;
         padding: 15px;
-        margin: 10px auto;
+        border-radius: 8px;
         width: 250px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
 
-      .etiqueta {
-        font-weight: bold;
-        color: #0056b3;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Lista de Estudiantes</h1>
+    .etiqueta { font-weight: bold; color: #0056b3; }
+</style>
+</head>
 
-    <!-- Tarjetas escritas manualmente -->
-    <div class="tarjeta">
-      <h3>Ana López</h3>
-      <p><span class="etiqueta">Carrera:</span> Informática</p>
-      <p><span class="etiqueta">Sede:</span> Central</p>
-      <p><span class="etiqueta">Email:</span> ana@email.com</p>
-    </div>
+<body>
 
-    <div class="tarjeta">
-      <h3>Carlos Pérez</h3>
-      <p><span class="etiqueta">Carrera:</span> Multimedia</p>
-      <p><span class="etiqueta">Sede:</span> Norte</p>
-      <p><span class="etiqueta">Email:</span> carlos@email.com</p>
-    </div>
-  </body>
+<h1>Lista de Estudiantes</h1>
+
+<div id="contenedor"></div>
+
+<script>
+    // Datos definidos en el mismo archivo
+    const estudiantes = [
+        { nombre: "Ana López", carrera: "Informática", sede: "Central", correo: "ana@email.com" },
+        { nombre: "Carlos Pérez", carrera: "Multimedia", sede: "Norte", correo: "carlos@email.com" }
+    ];
+
+    const contenedor = document.getElementById("contenedor");
+
+    // Crear tarjetas dinámicamente
+    estudiantes.forEach(est => {
+        const div = document.createElement("div");
+        div.className = "tarjeta";
+
+        div.innerHTML = `
+            <h3>${est.nombre}</h3>
+            <p><span class="etiqueta">Carrera:</span> ${est.carrera}</p>
+            <p><span class="etiqueta">Sede:</span> ${est.sede}</p>
+            <p><span class="etiqueta">Email:</span> ${est.correo}</p>
+        `;
+
+        contenedor.appendChild(div);
+    });
+</script>
+
+</body>
 </html>
