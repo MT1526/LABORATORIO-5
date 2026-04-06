@@ -1,0 +1,29 @@
+{
+    "Usuarios": [
+        {
+            "Nombre": "Juan",
+            "Apellido": "Perez",
+            "Edad": 25
+        },
+        {
+            "Nombre": "Pedro",
+            "Apellido": "Lopez",
+            "Edad": 23
+        },
+        {
+            "Nombre": "Elena",
+            "Apellido": "Carrasco",
+            "Edad": 25
+        },
+        {
+            "Nombre": "Pedro",
+            "Apellido": "Amarilla",
+            "Edad": 27
+        },
+        {
+            "Nombre": "Pedro",
+            "Apellido": "Perez",
+            "Edad": 29
+        }
+    ]
+}
