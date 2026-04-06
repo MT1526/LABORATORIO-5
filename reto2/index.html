@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- Define que el documento es HTML5 -->
+
+<html lang="es">
+<!-- Indica que el idioma de la página es español -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Permite usar caracteres especiales como tildes y ñ -->
+
+    <title>PokéAPI App</title>
+    <!-- Título que aparece en la pestaña del navegador -->
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- Conecta el archivo de estilos CSS -->
+</head>
+
+<body>
+
+    <h1>Consulta de Pokémon</h1>
+    <!-- Título principal que se muestra en la página -->
+
+    <input type="text" id="pokemonInput" placeholder="Ej: pikachu">
+    <!-- Campo de texto donde el usuario escribe el nombre del Pokémon -->
+
+    <button onclick="buscarPokemon()">Buscar</button>
+    <!-- Botón que ejecuta la función buscarPokemon() al hacer clic -->
+
+    <div id="pokemon" class="card"></div>
+    <!-- Contenedor donde se mostrará la información del Pokémon -->
+
+    <script src="script.js"></script>
+    <!-- Conecta el archivo JavaScript donde está la lógica (fetch, funciones, etc.) -->
+
+</body>
+
+</html>
