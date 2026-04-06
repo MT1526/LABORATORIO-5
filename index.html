@@ -1,26 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reto 3</title>
+    <title>Comparación JSON Local vs API</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
-        <h1>Comparación entre Json local y Api pública</h1>
-        <div>
-            <h2>Json local</h2>
-
+    <h1>📊 Comparación de Fuentes de Datos</h1>
+    
+    <div class="contenedor">
+        <!-- Sección JSON Local -->
+        <div class="seccion">
+            <h2>📁 Datos desde JSON Local</h2>
+            <button id="btnLocal">Cargar Datos Locales</button>
+            <div id="contenido-local">
+                <p>Presiona el botón para cargar los datos</p>
+            </div>
         </div>
-        <div>
-            <h2>Api pública</h2>
 
-        </div>
-        <div>
-            <h2>Diferencias</h2>
-            
+        <!-- Sección API Pública -->
+        <div class="seccion">
+            <h2>🌐 Datos desde API Pública</h2>
+            <button id="btnApi">Cargar Datos API</button>
+            <div id="contenido-api">
+                <p>Presiona el botón para cargar los datos</p>
+            </div>
         </div>
     </div>
 
+    <!-- Sección de diferencias -->
+    <div class="diferencias">
+        <h3>📝 3 Diferencias importantes:</h3>
+        <ul>
+            <li><strong>Origen:</strong> Local está en mi PC / API viene de internet</li>
+            <li><strong>Dependencia de internet:</strong> Local funciona sin internet / API necesita internet</li>
+            <li><strong>Control:</strong> Local puedo modificarlo yo / API depende del servidor externo</li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

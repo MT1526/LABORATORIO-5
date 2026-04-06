@@ -1,29 +1,25 @@
 {
-    "Usuarios": [
+    "usuarios": [
         {
-            "Nombre": "Juan",
-            "Apellido": "Perez",
-            "Edad": 25
+            "id": 1,
+            "nombre": "Ana García",
+            "edad": 25,
+            "ciudad": "Madrid",
+            "profesion": "Diseñadora"
         },
         {
-            "Nombre": "Pedro",
-            "Apellido": "Lopez",
-            "Edad": 23
+            "id": 2,
+            "nombre": "Carlos López",
+            "edad": 30,
+            "ciudad": "Barcelona",
+            "profesion": "Programador"
         },
         {
-            "Nombre": "Elena",
-            "Apellido": "Carrasco",
-            "Edad": 25
-        },
-        {
-            "Nombre": "Pedro",
-            "Apellido": "Amarilla",
-            "Edad": 27
-        },
-        {
-            "Nombre": "Pedro",
-            "Apellido": "Perez",
-            "Edad": 29
+            "id": 3,
+            "nombre": "María Sánchez",
+            "edad": 28,
+            "ciudad": "Valencia",
+            "profesion": "Profesora"
         }
     ]
 }
